@@ -26,6 +26,8 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+The data is numerical categorical so we are going to use a numerical categorical helper file. And since this has more types, this assignment will be more complicated when compared to the last. 
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -43,7 +45,7 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
-
++
 
 # Discussion and Conclusion
 
