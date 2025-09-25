@@ -49,11 +49,15 @@ basicCN <- ggplot(GSScsv.csv,aes(x=WORDSUM,y=DEGREE))
 basicCN + geom_boxplot()
 ```
 
+When observing the boxplots I noticed that the graduates hold the highest average WORDSUM score out of all the other categories. 
+
 ### Numerical Descriptive Results
 
 ```{r}
 favstats(WORDSUM~DEGREE,data=GSScsv.csv)
 ```
+
+By observing the numerical results I was able to notice that the Q1 of the graduate is already higher than the Q3 of the high school and LT high school. This proves that there is a statistical difference between the two. 
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -63,11 +67,18 @@ favstats(WORDSUM~DEGREE,data=GSScsv.csv)
 model1 <- aov(WORDSUM~DEGREE,data=GSScsv.csv)
 summary.aov(model1)
 ```
+
+When I observed the inferential results, I noticed that the p-value is extremely low meaning that there is a difference in at least 2 catgories. 
+
 ```{r}
 par(mar = c(3, 8.7, 2, 2))
 plot(TukeyHSD(model1),las=2)
 ```
+
+By looking at this inferential graph, I was able to determine that all but the two high school graduates are not different due to the confidence interval intercepts all categories except the two. 
+
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
 
 
 # Discussion and Conclusion
