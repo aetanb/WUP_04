@@ -84,3 +84,5 @@ By looking at this inferential graph, I was able to determine that all but the t
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+in this assignment I learned how to attach the data to the graphs using the code in the beginning lines. And using ggboxplot I was able to determine the difference in averages between the categories. In the numerical results I was able to determine the differnce between the quarters proves a statistical difference. And since the p value of the inferential results was extremely low, I was able to decide that multiple categories were different and using another plot I decided which two were different. 
