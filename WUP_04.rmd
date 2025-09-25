@@ -25,6 +25,8 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 # Methods
 
+
+
 <!--Mention that you intend to use chatGPT to the greatest extent possible. Give credit to chatGPT when you use it to create code in your report. Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
 The data is numerical categorical so we are going to use a numerical categorical helper file. And since this has more types, this assignment will be more complicated when compared to the last. 
@@ -35,15 +37,25 @@ The data is numerical categorical so we are going to use a numerical categorical
 
 ## Descriptive Results
 
-```{r}
-boxplot(score~Seat,data=davisdata)
-```
 
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+basicCN <- ggplot(GSScsv.csv,aes(x=WORDSUM,y=DEGREE))
+```
+```{r}
+basicCN + geom_boxplot()
+```
+
 ### Numerical Descriptive Results
+
+```{r}
+favstats(WORDSUM~DEGREE,data=GSScsv.csv)
+```
+
+
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
