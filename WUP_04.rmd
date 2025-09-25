@@ -7,12 +7,13 @@ output:
     df_print: paged
 ---
 
-```{r include=FALSE,echo=FALSE}
+```{r}
 require(knitr)
 require(tidyverse)
 require(tigerstats)
-
+GSScsv.csv <- read_csv("GSScsv.csv")
 ```
+
 
 # Introduction
 
@@ -33,6 +34,10 @@ The data is numerical categorical so we are going to use a numerical categorical
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 ## Descriptive Results
+
+```{r}
+boxplot(score~Seat,data=davisdata)
+```
 
 ### Graphical Descriptive Results
 
